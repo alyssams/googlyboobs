@@ -4,6 +4,8 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import "https://fonts.googleapis.com/css?family=Monoton";
 @import "https://fonts.googleapis.com/css?family=Merriweather+Sans:800";
+@import "https://fonts.googleapis.com/css?family=Londrina+Outline";
+@import "https://fonts.googleapis.com/css?family=Exo:800,900";
 /* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -145,23 +147,25 @@ body {
     font-size: 3.5em;
   }
 }
-/* line 12, ../sass/screen.scss */
+/* line 16, ../sass/screen.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 14, ../sass/screen.scss */
+/* line 18, ../sass/screen.scss */
 body {
   font-family: sans-serif;
 }
 
-/* line 17, ../sass/screen.scss */
-* {
+/* line 21, ../sass/screen.scss */
+*, *:before, *:after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  outline: none;
 }
 
-/* line 21, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
 h1 {
   text-align: center;
   font-size: 11em;
@@ -169,18 +173,34 @@ h1 {
   font-family: 'Merriweather Sans', sans-serif;
 }
 
-/* line 28, ../sass/screen.scss */
+/* line 33, ../sass/screen.scss */
+h1.lon {
+  text-align: center;
+  font-size: 11em;
+  font-weight: 900;
+  font-family: 'Londrina Outline', cursive;
+}
+
+/* line 39, ../sass/screen.scss */
+h1.exo {
+  text-align: center;
+  font-size: 11em;
+  font-weight: 900;
+  font-family: 'Exo', sans-serif;
+}
+
+/* line 46, ../sass/screen.scss */
 h2 {
   text-align: center;
   font-size: 5em;
 }
 
-/* line 32, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 p {
   text-align: center;
 }
 
-/* line 35, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 .circle {
   position: absolute;
   width: 10px;
@@ -193,7 +213,7 @@ p {
   border-radius: 50px;
 }
 
-/* line 47, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 video {
   float: left;
   position: relative;
@@ -202,30 +222,30 @@ video {
   opacity: 0.5;
   transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-/* line 54, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 video:hover {
   opacity: 1;
   transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-/* line 60, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 #intro {
   position: relative;
   padding: 100px;
 }
 
 /* ---- background ---- */
-/* line 68, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 .background {
   width: 100%;
   height: 100%;
   position: absolute;
 }
-/* line 74, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 .background .overlay {
   background: linear-gradient(to bottom, #f37970 0%, #efa584 50%, rgba(243, 121, 112, 0.5) 100%);
 }
-/* line 79, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 .background .slide {
   width: 100%;
   height: 400px;
@@ -233,7 +253,7 @@ video:hover {
 }
 
 /* ---- grid ---- */
-/* line 89, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 .grid {
   background: #EEE;
   /* center */
@@ -241,7 +261,7 @@ video:hover {
 }
 
 /* clearfix */
-/* line 96, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 .grid:after {
   content: '';
   display: block;
@@ -249,7 +269,7 @@ video:hover {
 }
 
 /* ---- grid-item ---- */
-/* line 104, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 .grid-item {
   width: 540px;
   height: 300px;
@@ -259,7 +279,7 @@ video:hover {
   border-color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 113, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 .stat {
   font-weight: 400;
   float: left;
@@ -269,7 +289,7 @@ video:hover {
   height: 294px;
 }
 
-/* line 121, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 .shake {
   -webkit-animation-name: spaceboots;
   -webkit-animation-duration: 0.8s;
