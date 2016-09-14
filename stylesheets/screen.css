@@ -269,23 +269,6 @@ video:hover {
 }
 
 /* ---- background ---- */
-/* line 92, ../sass/screen.scss */
-.background {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-/* line 98, ../sass/screen.scss */
-.background .overlay {
-  background: linear-gradient(to bottom, #f37970 0%, #efa584 50%, rgba(243, 121, 112, 0.5) 100%);
-}
-/* line 103, ../sass/screen.scss */
-.background .slide {
-  width: 100%;
-  height: 400px;
-  position: relative;
-}
-
 /* ---- grid ---- */
 /* line 113, ../sass/screen.scss */
 .grid {
