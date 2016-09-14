@@ -27,6 +27,29 @@ body {
   animation: neon1 1.5s ease-in-out infinite alternate;
 }
 
+.neon:nth-child(2){
+  color: #fff;
+  font-family: 'Londrina Outline', cursive;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+.neon:nth-child(3){
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+.neon:nth-child(4){
+  color: #fff;
+  font-family: 'Days One', sans-serif;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
 
 
 .neon:hover {

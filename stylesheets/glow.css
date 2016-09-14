@@ -30,7 +30,34 @@ body {
   animation: neon1 1.5s ease-in-out infinite alternate;
 }
 
-/* line 32, ../sass/glow.scss */
+/* line 30, ../sass/glow.scss */
+.neon:nth-child(2) {
+  color: #fff;
+  font-family: 'Londrina Outline', cursive;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+/* line 38, ../sass/glow.scss */
+.neon:nth-child(3) {
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+/* line 46, ../sass/glow.scss */
+.neon:nth-child(4) {
+  color: #fff;
+  font-family: 'Days One', sans-serif;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+/* line 55, ../sass/glow.scss */
 .neon:hover {
   color: #ffffff;
 }
@@ -64,12 +91,12 @@ body {
 }
 /*REEEEEEEEEEESPONSIVE*/
 @media (max-width: 650px) {
-  /* line 72, ../sass/glow.scss */
+  /* line 95, ../sass/glow.scss */
   #container {
     width: 100%;
   }
 
-  /* line 75, ../sass/glow.scss */
+  /* line 98, ../sass/glow.scss */
   p {
     font-size: 3.5em;
   }
