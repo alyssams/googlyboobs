@@ -285,12 +285,11 @@ video:hover {
   width: 540px;
   height: 300px;
   float: left;
-  background: #ffffff;
+  background: #F4C4D5;
   border: 1px solid #a78e96;
-  border-color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 137, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 .stat {
   font-weight: 400;
   float: left;
@@ -300,7 +299,7 @@ video:hover {
   height: 294px;
 }
 
-/* line 145, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .shake {
   -webkit-animation-name: spaceboots;
   -webkit-animation-duration: 0.8s;
