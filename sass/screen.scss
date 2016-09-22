@@ -5,57 +5,44 @@
 
 @import "compass/reset";
 @import "compass/css3";
-@import 'https://fonts.googleapis.com/css?family=Monoton';
-@import 'https://fonts.googleapis.com/css?family=Merriweather+Sans:800';
-@import 'https://fonts.googleapis.com/css?family=Londrina+Outline';
-@import 'https://fonts.googleapis.com/css?family=Exo:800,900';
+@import 'https://fonts.googleapis.com/css?family=Lora|Monoton|Open+Sans+Condensed:700';
 
 
 @import "glow";
-
-* { box-sizing: border-box; }
-
-body { font-family: sans-serif; }
-
 
 *,*:before,*:after{
   box-sizing: border-box;  
   margin: 0;
   padding:0;
   outline: none;
+  
 }
+
+body { 
+  font-family: 'Lora', serif;
+}
+
 h1 {
 	text-align: center;
 	font-size: 11em;
 	font-weight: 900;
-  font-family: 'Merriweather Sans', sans-serif;
 }
-h1.lon {
-  text-align: center;
-  font-size: 11em;
-  font-weight: 900;
-  font-family: 'Londrina Outline', cursive;
-}
-h1.exo {
-  text-align: center;
-  font-size: 11em;
-  font-weight: 900;
-  font-family: 'Exo', sans-serif;
-}
-h1.day {
-  text-align: center;
-  font-size: 11em;
-  font-family: 'Days One', sans-serif;
-}
-
 
 h2 {
 	text-align: center;
 	font-size: 5em;
+  font-family: 'Open Sans Condensed', sans-serif;
+
 }
 p {
 	text-align: center;
 }
+
+span {
+  font-family: 'Lora', serif;
+  font-size: 60px;
+}
+
 .circle {
 	position: absolute;
 	width: 10px;
@@ -129,18 +116,31 @@ video {
   width: 540px;
   height: 300px;
   float: left;
-  background: #F4C4D5;
-  border: 1px solid #a78e96;
+  background: #FF1177;
+  border: 1px solid #FF1177;
 }
 
 .stat {
-  font-weight: 400;
-  float: left;
-  line-height: 30px;
-  position: relative;
-  width: 33.33333%;
-  height: 294px;
+  line-height: 50px;
+  text-align: center;
+  padding: 10%;
+  color: #190606;
+  font-size: 2em;
 }
+
+.stat-yellow {
+   background: #FDFC47;
+}
+
+.stat-blue {
+background: #1cffef; /* fallback for old browsers */
+}
+
+.stat-green {
+background: #24FE41;                   
+  //background-image: -webkit-radial-gradient(cnter, ellipse closest-corner, #E5E059 30%, #BDD358 100%);
+}
+
 .shake {
   -webkit-animation-name: spaceboots;
   -webkit-animation-duration: 0.8s;

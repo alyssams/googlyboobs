@@ -2,10 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-@import "https://fonts.googleapis.com/css?family=Monoton";
-@import "https://fonts.googleapis.com/css?family=Merriweather+Sans:800";
-@import "https://fonts.googleapis.com/css?family=Londrina+Outline";
-@import "https://fonts.googleapis.com/css?family=Exo:800,900";
+@import "https://fonts.googleapis.com/css?family=Lora|Monoton|Open+Sans+Condensed:700";
 /* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -71,13 +68,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 6, ../sass/glow.scss */
+/* line 1, ../sass/glow.scss */
 #container {
   position: relative;
 }
 
 /*neeeeoooon*/
-/* line 12, ../sass/glow.scss */
+/* line 7, ../sass/glow.scss */
 .neon {
   text-align: center;
   font-size: 10em;
@@ -88,7 +85,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition: all 0.5s;
 }
 
-/* line 22, ../sass/glow.scss */
+/* line 17, ../sass/glow.scss */
 .neon:nth-child(1) {
   color: #fff;
   font-family: Monoton;
@@ -97,7 +94,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: neon1 1.5s ease-in-out infinite alternate;
 }
 
-/* line 30, ../sass/glow.scss */
+/* line 25, ../sass/glow.scss */
 .neon:nth-child(2) {
   color: #fff;
   font-family: 'Londrina Outline', cursive;
@@ -106,7 +103,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: neon1 1.5s ease-in-out infinite alternate;
 }
 
-/* line 38, ../sass/glow.scss */
+/* line 33, ../sass/glow.scss */
 .neon:nth-child(3) {
   color: #fff;
   font-family: 'Exo', sans-serif;
@@ -115,7 +112,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: neon1 1.5s ease-in-out infinite alternate;
 }
 
-/* line 46, ../sass/glow.scss */
+/* line 41, ../sass/glow.scss */
 .neon:nth-child(4) {
   color: #fff;
   font-family: 'Days One', sans-serif;
@@ -124,7 +121,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   animation: neon1 1.5s ease-in-out infinite alternate;
 }
 
-/* line 55, ../sass/glow.scss */
+/* line 50, ../sass/glow.scss */
 .neon:hover {
   color: #ffffff;
 }
@@ -158,27 +155,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /*REEEEEEEEEEESPONSIVE*/
 @media (max-width: 650px) {
-  /* line 95, ../sass/glow.scss */
+  /* line 90, ../sass/glow.scss */
   #container {
     width: 100%;
   }
 
-  /* line 98, ../sass/glow.scss */
+  /* line 93, ../sass/glow.scss */
   p {
     font-size: 3.5em;
   }
 }
-/* line 16, ../sass/screen.scss */
-* {
-  box-sizing: border-box;
-}
-
-/* line 18, ../sass/screen.scss */
-body {
-  font-family: sans-serif;
-}
-
-/* line 21, ../sass/screen.scss */
+/* line 13, ../sass/screen.scss */
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
@@ -186,49 +173,37 @@ body {
   outline: none;
 }
 
-/* line 27, ../sass/screen.scss */
+/* line 21, ../sass/screen.scss */
+body {
+  font-family: 'Lora', serif;
+}
+
+/* line 25, ../sass/screen.scss */
 h1 {
   text-align: center;
   font-size: 11em;
   font-weight: 900;
-  font-family: 'Merriweather Sans', sans-serif;
 }
 
-/* line 33, ../sass/screen.scss */
-h1.lon {
-  text-align: center;
-  font-size: 11em;
-  font-weight: 900;
-  font-family: 'Londrina Outline', cursive;
-}
-
-/* line 39, ../sass/screen.scss */
-h1.exo {
-  text-align: center;
-  font-size: 11em;
-  font-weight: 900;
-  font-family: 'Exo', sans-serif;
-}
-
-/* line 45, ../sass/screen.scss */
-h1.day {
-  text-align: center;
-  font-size: 11em;
-  font-family: 'Days One', sans-serif;
-}
-
-/* line 52, ../sass/screen.scss */
+/* line 31, ../sass/screen.scss */
 h2 {
   text-align: center;
   font-size: 5em;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
-/* line 56, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
 p {
   text-align: center;
 }
 
-/* line 59, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
+span {
+  font-family: 'Lora', serif;
+  font-size: 60px;
+}
+
+/* line 46, ../sass/screen.scss */
 .circle {
   position: absolute;
   width: 10px;
@@ -241,7 +216,7 @@ p {
   border-radius: 50px;
 }
 
-/* line 71, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 video {
   float: left;
   position: relative;
@@ -250,13 +225,13 @@ video {
   opacity: 0.5;
   transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-/* line 78, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 video:hover {
   opacity: 1;
   transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-/* line 84, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 #intro {
   position: relative;
   padding: 100px;
@@ -264,7 +239,7 @@ video:hover {
 
 /* ---- background ---- */
 /* ---- grid ---- */
-/* line 113, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 .grid {
   background: #EEE;
   /* center */
@@ -272,7 +247,7 @@ video:hover {
 }
 
 /* clearfix */
-/* line 120, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 .grid:after {
   content: '';
   display: block;
@@ -280,23 +255,38 @@ video:hover {
 }
 
 /* ---- grid-item ---- */
-/* line 128, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 .grid-item {
   width: 540px;
   height: 300px;
   float: left;
-  background: #F4C4D5;
-  border: 1px solid #a78e96;
+  background: #FF1177;
+  border: 1px solid #FF1177;
 }
 
-/* line 136, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 .stat {
-  font-weight: 400;
-  float: left;
-  line-height: 30px;
-  position: relative;
-  width: 33.33333%;
-  height: 294px;
+  line-height: 50px;
+  text-align: center;
+  padding: 10%;
+  color: #190606;
+  font-size: 2em;
+}
+
+/* line 131, ../sass/screen.scss */
+.stat-yellow {
+  background: #FDFC47;
+}
+
+/* line 135, ../sass/screen.scss */
+.stat-blue {
+  background: #1cffef;
+  /* fallback for old browsers */
+}
+
+/* line 139, ../sass/screen.scss */
+.stat-green {
+  background: #24FE41;
 }
 
 /* line 144, ../sass/screen.scss */
