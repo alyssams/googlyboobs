@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>Hero Slideshow</title>
+</head>
+<body>
+	<header class="cd-header">
+		<!-- <div id="cd-logo"><a href="#0"><img src="assets/cd-logo.svg" alt="Logo"></a></div> -->
+
+		<nav class="cd-primary-nav">
+			<ul>
+				<li><a href="#0">Get Checked</a></li>
+				<li><a href="#0">Donate</a></li>
+				<li><a href="#0">About</a></li>
+			</ul>
+		</nav> <!-- .cd-primary-nav -->
+	</header>
+
+	<section class="cd-hero">
+		<ul class="cd-hero-slider autoplay">
+			<li class="selected cd-bg-video">
+				<div class="cd-full-width">
+					<h1>GOOGLY BOOBS</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
+				</div>
+
+				<div class="cd-bg-video-wrapper" data-video="assets/video/video0">
+					<!-- video element will be loaded using jQuery -->
+				</div> <!-- .cd-bg-video-wrapper -->
+				<div class="overlay"></div>
+			</li>
+
+			<li class="cd-bg-video">
+				<div class="cd-full-width">
+				</div> 
+
+				<div class="cd-bg-video-wrapper" data-video="assets/video/video1">
+				</div> 
+			</li> 
+
+			 <li>
+				<div class="cd-full-width">
+					<h2>"About 231,840 new cases of invasive breast cancer will be diagnosed in women." - American Cancer Society</h2>
+					<a href="#0" class="cd-btn">Learn more</a>
+				</div> 
+			</li>
+
+			<li class="cd-bg-video">
+				<div class="cd-full-width">
+					<!-- <h2>Slide title here</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
+					<a href="#0" class="cd-btn">Learn more</a> -->
+				</div> 
+
+				<div class="cd-bg-video-wrapper" data-video="assets/video/video2">
+				</div> 
+			</li>
+
+			<li class="cd-bg-video">
+				<div class="cd-full-width">
+					<!-- <h2>Slide title here</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
+					<a href="#0" class="cd-btn">Learn more</a> -->
+				</div> 
+
+				<div class="cd-bg-video-wrapper" data-video="assets/video/video0">
+				</div> 
+			</li>
+			
+
+			<li>
+				<div class="cd-full-width">
+					<h2>"More than 400 men in the U.S. are expected to die from breast cancer this year." - Susan G. Komen</h2>
+					<a href="#0" class="cd-btn">Learn more</a>
+				</div>
+			</li> 
+
+
+			
+
+ 
+		</ul> <!-- .cd-hero-slider -->
+
+		<!-- <div class="cd-slider-nav">
+			<nav>
+				<span class="cd-marker item-1"></span>
+				
+				<ul>
+					<li class="selected"><a href="#0">Video</a></li>
+					<li><a href="#0">Intro</a></li>
+					<li><a href="#0">Video</a></li>
+				</ul>
+			</nav> 
+		</div> --> <!-- .cd-slider-nav -->
+	</section> <!-- .cd-hero -->
+
+	<!--This player was designed to autoplay when the page is loaded. You can remove auto play from <audio> element to stop the auto play-->
+	<audio id="audio-player" autoplay name="audio-player" src="assets/music/peaches-fpa-nesono-remix.mp3" ></audio>
+	<div class="musicplayer">
+	  <div class="musicicon">
+	    <h1>MUSIC PLAYER</h1>
+	  </div>
+	  <div class="toggle">
+	    <div class="on">ON</div>
+	    <div class="off">OFF</div>
+	    <div class="slide"></div>
+	  </div>
+	</div>
+	
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script>
+<script src="js/music.js"></script>
+</body>
+</html>
