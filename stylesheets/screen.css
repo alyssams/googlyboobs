@@ -1,0 +1,417 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300,400,700";
+/* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'nick';
+  src: url("../font/Nickainley/OTF/Nickainley.otf") format("otf"), url("../font/Nickainley/TTF/Nickainley.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 1, ../sass/modal.scss */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* line 2, ../sass/modal.scss */
+body {
+  height: 100vh;
+  background: #ccc;
+  overflow: hidden;
+}
+
+/* line 6, ../sass/modal.scss */
+nav {
+  margin: 30px auto;
+  top: 0;
+  position: absolute;
+  z-index: 10;
+  right: 30px;
+}
+/* line 12, ../sass/modal.scss */
+nav .modal-container {
+  position: relative;
+  display: inline-table;
+}
+/* line 16, ../sass/modal.scss */
+nav .modal-btn {
+  font-weight: 300;
+  text-transform: uppercase;
+  border: 1px solid white;
+  font-size: 22px;
+  font-size: 1.2vw;
+  font-style: 1vw;
+  display: block;
+  margin: 0px 20px;
+  color: #fff;
+  width: auto;
+  padding: 15px;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.3s ease-in;
+}
+/* line 34, ../sass/modal.scss */
+nav .modal-btn:hover {
+  background: #f37871;
+}
+/* line 37, ../sass/modal.scss */
+nav .modal-btn a {
+  text-decoration: none;
+}
+/* line 42, ../sass/modal.scss */
+nav .black-btn {
+  width: 15%;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+/* line 46, ../sass/modal.scss */
+nav .black-btn:hover {
+  background: #f37871;
+}
+/* line 50, ../sass/modal.scss */
+nav .modal-content,
+nav .modal-backdrop {
+  height: 0;
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  cursor: pointer;
+  color: black;
+  transition: opacity 0.2s ease-in;
+}
+/* line 60, ../sass/modal.scss */
+nav .modal-content h2,
+nav .modal-backdrop h2 {
+  font-family: 'nick';
+  font-size: 50px;
+  font-size: 5.5vw;
+  text-align: center;
+}
+/* line 66, ../sass/modal.scss */
+nav .modal-content p,
+nav .modal-backdrop p {
+  line-height: 1.5em;
+  font-size: 2.0vw;
+  letter-spacing: 1px;
+  padding: 20px 0px;
+}
+/* line 72, ../sass/modal.scss */
+nav .modal-content a,
+nav .modal-backdrop a {
+  color: black;
+}
+/* line 76, ../sass/modal.scss */
+nav .modal-close {
+  color: #aaa;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  padding-top: 3px;
+  background: #fff;
+  font-size: 16px;
+  width: 25px;
+  height: 25px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 89, ../sass/modal.scss */
+nav .modal-close:hover {
+  color: #333;
+}
+/* line 91, ../sass/modal.scss */
+nav .modal-content-btn {
+  position: absolute;
+  text-align: center;
+  cursor: pointer;
+  bottom: 20px;
+  right: 30px;
+  background: #446CB3;
+  color: #fff;
+  width: 50px;
+  border-radius: 2px;
+  font-size: 14px;
+  height: 32px;
+  padding-top: 9px;
+  font-weight: normal;
+}
+/* line 105, ../sass/modal.scss */
+nav .modal-content-btn:hover {
+  color: #fff;
+  background: #365690;
+}
+/* line 107, ../sass/modal.scss */
+nav #modal-check, nav #modal-submit {
+  display: none;
+}
+/* line 109, ../sass/modal.scss */
+nav #modal-check.active ~ .modal-backdrop, nav #modal-check:checked ~ .modal-backdrop, nav #modal-submit.active ~ .modal-backdrop, nav #modal-submit:checked ~ .modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
+}
+/* line 122, ../sass/modal.scss */
+nav #modal-check.active ~ .modal-content, nav #modal-check:checked ~ .modal-content, nav #modal-submit.active ~ .modal-content, nav #modal-submit:checked ~ .modal-content {
+  opacity: 1;
+  background-color: #fff;
+  max-width: 860px;
+  width: 100%;
+  height: auto;
+  padding: 2%;
+  position: fixed;
+  left: calc(50% - 430px);
+  top: 14%;
+  z-index: 999;
+  pointer-events: auto;
+  cursor: auto;
+  visibility: visible;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+}
+@media (max-width: 400px) {
+  /* line 122, ../sass/modal.scss */
+  nav #modal-check.active ~ .modal-content, nav #modal-check:checked ~ .modal-content, nav #modal-submit.active ~ .modal-content, nav #modal-submit:checked ~ .modal-content {
+    left: 0;
+  }
+}
+
+/* line 17, ../sass/screen.scss */
+*, *::after, *::before {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 21, ../sass/screen.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 25, ../sass/screen.scss */
+body {
+  background-image: url("http://mary.wtf/images/background.png");
+  background-size: 100%;
+  color: #FFF;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+}
+
+/* line 36, ../sass/screen.scss */
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+/* line 41, ../sass/screen.scss */
+.overlay {
+  opacity: .5;
+  background: linear-gradient(to bottom, #f37970 0%, #efa584 50%, rgba(243, 121, 112, 0.5) 100%);
+}
+
+/* line 47, ../sass/screen.scss */
+span.small {
+  font-weight: 400;
+  font-size: 10px;
+  font-size: 1vw;
+  margin-left: 20%;
+}
+/* line 52, ../sass/screen.scss */
+span.small a {
+  color: white;
+  cursor: pointer;
+}
+
+/* line 58, ../sass/screen.scss */
+span.bold {
+  font-weight: 700;
+  font-size: 60px;
+  font-size: 6vw;
+}
+
+/* line 70, ../sass/screen.scss */
+.carousel {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 75, ../sass/screen.scss */
+.carousel-cell {
+  width: 100%;
+  height: 100%;
+  margin-right: 10px;
+  background: transparent;
+  border-radius: 5px;
+}
+
+/* line 84, ../sass/screen.scss */
+.black {
+  background-color: black;
+}
+
+/* line 88, ../sass/screen.scss */
+.green {
+  background-color: green;
+}
+
+/* line 92, ../sass/screen.scss */
+.blue {
+  background-color: blue;
+}
+
+/* line 96, ../sass/screen.scss */
+.red {
+  background-color: red;
+}
+
+/* line 100, ../sass/screen.scss */
+.yellow {
+  background-color: yellow;
+}
+
+/* line 104, ../sass/screen.scss */
+#slideshow {
+  background: transparent;
+  width: 80%;
+  height: 10%;
+  bottom: 0px;
+  top: 20%;
+  left: 10%;
+  position: absolute;
+}
+@media only screen and (min-width: 320px) {
+  /* line 104, ../sass/screen.scss */
+  #slideshow {
+    width: 100%;
+    left: 0;
+  }
+}
+
+/* line 118, ../sass/screen.scss */
+#slideshow > div {
+  position: absolute;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  font-size: 5vw;
+  font-weight: 300;
+}
+/* line 128, ../sass/screen.scss */
+#slideshow > div h2 {
+  position: absolute;
+  font-weight: 300;
+  font-size: 1.5vw;
+  top: 77%;
+  left: 23%;
+}
+/* line 135, ../sass/screen.scss */
+#slideshow > div p {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 161, ../sass/screen.scss */
+video {
+  min-height: 100%;
+  min-width: 100%;
+  max-width: none;
+  height: auto;
+  width: auto;
+  position: absolute;
+}
+
+/* Fade CSS */
+/* line 184, ../sass/screen.scss */
+.flickity-slider {
+  transform: none !important;
+}
+
+/* line 188, ../sass/screen.scss */
+.carousel-cell {
+  left: 0 !important;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: -1;
+}
+
+/* line 195, ../sass/screen.scss */
+.carousel-cell.is-selected {
+  opacity: 1;
+  z-index: 0;
+}

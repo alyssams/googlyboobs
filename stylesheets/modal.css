@@ -1,0 +1,173 @@
+/* line 1, ../sass/modal.scss */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* line 2, ../sass/modal.scss */
+body {
+  height: 100vh;
+  background: #ccc;
+  overflow: hidden;
+}
+
+/* line 6, ../sass/modal.scss */
+nav {
+  margin: 30px auto;
+  top: 0;
+  position: absolute;
+  z-index: 10;
+  right: 30px;
+}
+/* line 12, ../sass/modal.scss */
+nav .modal-container {
+  position: relative;
+  display: inline-table;
+}
+/* line 16, ../sass/modal.scss */
+nav .modal-btn {
+  font-weight: 300;
+  text-transform: uppercase;
+  border: 1px solid white;
+  font-size: 22px;
+  font-size: 1.2vw;
+  font-style: 1vw;
+  display: block;
+  margin: 0px 20px;
+  color: #fff;
+  width: auto;
+  padding: 15px;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.3s ease-in;
+}
+/* line 34, ../sass/modal.scss */
+nav .modal-btn:hover {
+  background: #f37871;
+}
+/* line 37, ../sass/modal.scss */
+nav .modal-btn a {
+  text-decoration: none;
+}
+/* line 42, ../sass/modal.scss */
+nav .black-btn {
+  width: 15%;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+/* line 46, ../sass/modal.scss */
+nav .black-btn:hover {
+  background: #f37871;
+}
+/* line 50, ../sass/modal.scss */
+nav .modal-content,
+nav .modal-backdrop {
+  height: 0;
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  cursor: pointer;
+  color: black;
+  transition: opacity 0.2s ease-in;
+}
+/* line 60, ../sass/modal.scss */
+nav .modal-content h2,
+nav .modal-backdrop h2 {
+  font-family: 'nick';
+  font-size: 50px;
+  font-size: 5.5vw;
+  text-align: center;
+}
+/* line 66, ../sass/modal.scss */
+nav .modal-content p,
+nav .modal-backdrop p {
+  line-height: 1.5em;
+  font-size: 2.0vw;
+  letter-spacing: 1px;
+  padding: 20px 0px;
+}
+/* line 72, ../sass/modal.scss */
+nav .modal-content a,
+nav .modal-backdrop a {
+  color: black;
+}
+/* line 76, ../sass/modal.scss */
+nav .modal-close {
+  color: #aaa;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  padding-top: 3px;
+  background: #fff;
+  font-size: 16px;
+  width: 25px;
+  height: 25px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 89, ../sass/modal.scss */
+nav .modal-close:hover {
+  color: #333;
+}
+/* line 91, ../sass/modal.scss */
+nav .modal-content-btn {
+  position: absolute;
+  text-align: center;
+  cursor: pointer;
+  bottom: 20px;
+  right: 30px;
+  background: #446CB3;
+  color: #fff;
+  width: 50px;
+  border-radius: 2px;
+  font-size: 14px;
+  height: 32px;
+  padding-top: 9px;
+  font-weight: normal;
+}
+/* line 105, ../sass/modal.scss */
+nav .modal-content-btn:hover {
+  color: #fff;
+  background: #365690;
+}
+/* line 107, ../sass/modal.scss */
+nav #modal-check, nav #modal-submit {
+  display: none;
+}
+/* line 109, ../sass/modal.scss */
+nav #modal-check.active ~ .modal-backdrop, nav #modal-check:checked ~ .modal-backdrop, nav #modal-submit.active ~ .modal-backdrop, nav #modal-submit:checked ~ .modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
+}
+/* line 122, ../sass/modal.scss */
+nav #modal-check.active ~ .modal-content, nav #modal-check:checked ~ .modal-content, nav #modal-submit.active ~ .modal-content, nav #modal-submit:checked ~ .modal-content {
+  opacity: 1;
+  background-color: #fff;
+  max-width: 860px;
+  width: 100%;
+  height: auto;
+  padding: 2%;
+  position: fixed;
+  left: calc(50% - 430px);
+  top: 14%;
+  z-index: 999;
+  pointer-events: auto;
+  cursor: auto;
+  visibility: visible;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+}
+@media (max-width: 400px) {
+  /* line 122, ../sass/modal.scss */
+  nav #modal-check.active ~ .modal-content, nav #modal-check:checked ~ .modal-content, nav #modal-submit.active ~ .modal-content, nav #modal-submit:checked ~ .modal-content {
+    left: 0;
+  }
+}
