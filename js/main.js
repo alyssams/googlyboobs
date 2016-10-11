@@ -15,14 +15,14 @@ $(document).ready( function() {
   });
 
   $("#slideshow > div:gt(0)").hide();
-  // setInterval(function() {
-  //   $('#slideshow > div:first')
-  //     .fadeOut(1000)
-  //     .next()
-  //     .fadeIn(1000)
-  //     .end()
-  //     .appendTo('#slideshow');
-  // },  6000);
+  setInterval(function() {
+    $('#slideshow > div:first')
+      .fadeOut(1000)
+      .next()
+      .fadeIn(1000)
+      .end()
+      .appendTo('#slideshow');
+  },  6000);
 
   function onLoadeddata( event ) {
     var cell = $carousel.flickity( 'getParentCell', event.target );
@@ -47,17 +47,17 @@ $(document).ready( function() {
       //     windowWidth = $window.width(),
       // marginLeftAdjust =   (windowWidth - videoWidth);
 
-      // var videoWidth = $video.width(),
-      //     videoHeight = $video.height();
+      var videoWidth = $video.width(),
+          videoHeight = $video.height();
 
-      // $video.css({
-      //     'height': videoHeight, 
-      //     'width' : videoWidth
-      // });
-      
       $video.css({
-          'height': height, 
-          'width' : width
+          'height': videoHeight, 
+          'width' : videoWidth
       });
+      
+      // $video.css({
+      //     'height': height, 
+      //     'width' : width
+      // });
   }).resize();
 });
