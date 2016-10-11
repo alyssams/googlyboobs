@@ -52,13 +52,28 @@ span.small{
   a {
     color: white;
     cursor: pointer;
+    position: relative;
+    top: -2px;
+  }
+  @include MQ(S) {
+    margin-left:0;
+    font-size: 10px;
+    font-size: 2vw;
+    top: 50px;
+    position: relative;
   }
 }
 
 span.bold {
   font-weight: 700;
-  font-size: 60px;
-  font-size: 6vw;
+  @include MQ(S) {
+    font-size: 40px;
+    font-size: 8vw;
+  }
+  @include MQ(M) {
+    font-size: 20px;
+    font-size: 6vw;
+  }
   
 }
 
@@ -116,67 +131,98 @@ span.bold {
 }
 
 #slideshow > div {
-    position: absolute;
     position: fixed;
     top: 50%;
     left: 50%;
     width: 100%;
+    text-align: center;
     transform: translate(-50%, -50%);
-    font-size: 50px;
-    font-size: 5vw;
-    font-weight: 300;
     h2 {
       position: absolute;
       font-weight: 300;
-      font-size: 1.5vw;
-      top: 77%;
-      left: 23%;
     }
     p {
-      width: 70%;
       margin: 0 auto;
-      text-align: center;
+      font-weight: 300;
     }
-    // @include MQ(S) {
-    //   width: 100%;
-    //   margin-top: 0;
-    //   margin-left: 0;
-    //   left: 0;
-    // }
-    // @include MQ(M) {
-    //   width: 100%;
-    //   margin-top: 0;
-    //   margin-left: 0;
-    //   left: 0;
-    // }
-    // @include MQ(L) {
-    //   width: 80%;
-    //   top: -50%;
-    //   left: 11%;
-    //   margin-top: -80px;
-    //   margin-left: -50px;
-    // }
+
+    @include MQ(S) {
+      width: auto;
+      img {
+        width: 700px;
+      }
+      h2 {
+        padding: 0;
+        font-size: 4vw;
+        position: relative;
+      }
+      .facts {
+        width: 320px;
+        padding: 2%;
+      }
+      p {
+        width: 100%;
+        font-size: 50px;
+        font-size: 6vw;
+        line-height: 1.3em;
+      }
+    }
+
+    @include MQ(M) {
+      width: 100%;
+      img {
+        margin-top: 0;
+        width: 100%;
+      }
+      .facts {
+        width: 100%;
+      }
+      p {
+        width: 70%;
+        font-size: 5vw;
+      }
+    }
+    @include MQ(L) {
+      img {
+        position: relative;
+        width: 70%;
+      }
+      h2 {
+        padding:0;
+        font-size: 1.5vw;
+      }
+    }
 }
 
 video {
-  // position: fixed;
-  // top: 50%;
-  // left: 50%;
-  // min-width: 100%;
-  // min-height: 100%;
-  // width: auto;
-  // height: auto;
-  // z-index: -100;
-  // transform: translateX(-50%) translateY(-50%);
-  // background-image: url('http://mary.wtf/images/background.png') no-repeat;
-  // background-size: cover;
-  // transition: 1s opacity;
-  min-height: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
   min-width: 100%;
-  max-width: none;
-  height: auto;
-  width: auto;
-  position: absolute;
+  min-height: 100%;
+  overflow: hidden;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background-image: url('http://mary.wtf/images/background.png') no-repeat;
+  background-size: cover;
+  // transition: 1s opacity;
+  // min-height: 100%;
+  // min-width: 100%;
+  // max-width: none;
+  // height: auto;
+  // width: auto;
+  // position: absolute;
+  @include MQ(M) {
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    transform: translateX(0%) translateY(0%);
+  }
+
+  @include MQ(L) {
+    height: auto !important;
+  }
 }
 
 /* Fade CSS */

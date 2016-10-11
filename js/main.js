@@ -34,30 +34,34 @@ $(document).ready( function() {
     $(video).on( 'loadeddata', onLoadeddata );
   });
 
+  // $('.modal-btn').click(function(){
+    
+  // });
+
   var $video  = $('video'),
     $window = $(window); 
 
-  $(window).resize(function(){
+  // $(window).resize(function(){
       
-      var height = $window.height();
-      var width = $window.width();
-      // $video.css('height', height);
+  //     var height = $window.height();
+  //     var width = $window.width();
+  //     // $video.css('height', height);
       
-      // var videoWidth = $video.width(),
-      //     windowWidth = $window.width(),
-      // marginLeftAdjust =   (windowWidth - videoWidth);
+  //     // var videoWidth = $video.width(),
+  //     //     windowWidth = $window.width(),
+  //     // marginLeftAdjust =   (windowWidth - videoWidth);
 
       var videoWidth = $video.width(),
           videoHeight = $video.height();
 
       $video.css({
           'height': videoHeight, 
-          'width' : videoWidth
+          // 'width' : videoWidth
       });
       
-      // $video.css({
-      //     'height': height, 
-      //     'width' : width
-      // });
-  }).resize();
+  //     // $video.css({
+  //     //     'height': height, 
+  //     //     'width' : width
+  //     // });
+  // }).resize();
 });
