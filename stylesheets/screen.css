@@ -587,6 +587,15 @@ span.bold {
 }
 @media only screen and (min-width: 568px) and (orientation: landscape) {
   /* line 221, ../sass/screen.scss */
+  #slideshow > div img {
+    margin-top: 80px;
+  }
+  /* line 224, ../sass/screen.scss */
+  #slideshow > div h2 {
+    font-size: 2vw;
+    top: -90px;
+  }
+  /* line 228, ../sass/screen.scss */
   #slideshow > div p {
     font-size: 4vw;
   }
@@ -596,35 +605,35 @@ span.bold {
   #slideshow > div {
     width: 100%;
   }
-  /* line 228, ../sass/screen.scss */
+  /* line 235, ../sass/screen.scss */
   #slideshow > div img {
     margin-top: 0;
     width: 100%;
   }
-  /* line 232, ../sass/screen.scss */
+  /* line 239, ../sass/screen.scss */
   #slideshow > div .facts {
     width: 100%;
   }
-  /* line 235, ../sass/screen.scss */
+  /* line 242, ../sass/screen.scss */
   #slideshow > div p {
     width: 70%;
     font-size: 5vw;
   }
 }
 @media only screen and (min-width: 1200px) {
-  /* line 241, ../sass/screen.scss */
+  /* line 248, ../sass/screen.scss */
   #slideshow > div img {
     position: relative;
     width: 70%;
   }
-  /* line 245, ../sass/screen.scss */
+  /* line 252, ../sass/screen.scss */
   #slideshow > div h2 {
     padding: 0;
     font-size: 1.5vw;
   }
 }
 
-/* line 252, ../sass/screen.scss */
+/* line 259, ../sass/screen.scss */
 video {
   position: fixed;
   min-width: 100%;
@@ -635,7 +644,7 @@ video {
   background-size: cover;
 }
 @media only screen and (min-width: 768px) {
-  /* line 252, ../sass/screen.scss */
+  /* line 259, ../sass/screen.scss */
   video {
     top: 0;
     left: 0;
@@ -645,7 +654,7 @@ video {
   }
 }
 @media only screen and (min-width: 1200px) {
-  /* line 252, ../sass/screen.scss */
+  /* line 259, ../sass/screen.scss */
   video {
     height: auto !important;
     top: 50%;
@@ -657,12 +666,12 @@ video {
 }
 
 /* Fade CSS */
-/* line 287, ../sass/screen.scss */
+/* line 294, ../sass/screen.scss */
 .flickity-slider {
   transform: none !important;
 }
 
-/* line 291, ../sass/screen.scss */
+/* line 298, ../sass/screen.scss */
 .carousel-cell {
   left: 0 !important;
   opacity: 0;
@@ -670,13 +679,13 @@ video {
   z-index: -1;
 }
 
-/* line 298, ../sass/screen.scss */
+/* line 305, ../sass/screen.scss */
 .carousel-cell.is-selected {
   opacity: 1;
   z-index: 0;
 }
 
-/* line 303, ../sass/screen.scss */
+/* line 310, ../sass/screen.scss */
 .flickity-viewport {
   height: 100% !important;
 }

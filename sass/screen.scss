@@ -218,6 +218,13 @@ span.bold {
     }
 
     @include MQ(SL) {
+      img {
+        margin-top: 80px;
+      }
+      h2 {
+        font-size: 2vw;
+        top: -90px;
+      }
       p {
         font-size: 4vw;
       }
