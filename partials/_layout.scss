@@ -1,6 +1,7 @@
 // breakpoints
    
-$S:     320px;   
+$S:     320px; 
+$SL:    568px;   
 $M:     768px;     
 $L:     1200px;     
 
@@ -9,6 +10,9 @@ $L:     1200px;
 @mixin MQ($canvas) {
   @if $canvas == S {
    @media only screen and (min-width: $S) { @content; } 
+  }
+  @if $canvas == SL {
+   @media only screen and (min-width: $SL) and (orientation: landscape) { @content; } 
   }
   @else if $canvas == M {
    @media only screen and (min-width: $M) { @content; } 

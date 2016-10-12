@@ -38,6 +38,55 @@ body, html {
   margin: 0;
 }
 
+.mobile_only {
+  background-repeat: repeat-y;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  display: none;
+  display: none;
+  @include MQ(S) {
+    display: block;
+  }
+  @include MQ(M) {
+    display: none;
+  }
+  @include MQ(L) {
+    display: none;
+  }
+}
+
+.woman_00, .woman_01, .woman_02, .woman_03, .man_00 {
+  @include MQ(S) {
+      display: block;
+    }
+    @include MQ(M) {
+      display: none;
+    }
+    @include MQ(L) {
+      display: none;
+    }
+}
+
+.woman_00 {
+    background-image: url(../images/woman_00.gif);
+}
+
+.woman_01 {
+    background-image: url(../images/woman_01.gif);
+}
+.woman_02 {
+    background-image: url(../images/woman_02.gif);
+}
+.woman_03 {
+    background-image: url(../images/woman_03.gif);
+}
+.man_00 {
+    background-image: url(../images/man_00.gif);
+}
+
  .overlay {
   opacity: .5;
   background:linear-gradient(top, rgba(243,121,112,1) 0%,rgba(239,165,132,1) 50%,rgba(243,121,112,0.5) 100%);
@@ -168,6 +217,12 @@ span.bold {
       }
     }
 
+    @include MQ(SL) {
+      p {
+        font-size: 4vw;
+      }
+    }
+
     @include MQ(M) {
       width: 100%;
       img {
@@ -196,13 +251,10 @@ span.bold {
 
 video {
   position: fixed;
-  top: 50%;
-  left: 50%;
   min-width: 100%;
   min-height: 100%;
   overflow: hidden;
   z-index: -100;
-  transform: translateX(-50%) translateY(-50%);
   background-image: url('http://mary.wtf/images/background.png') no-repeat;
   background-size: cover;
   // transition: 1s opacity;
@@ -215,13 +267,18 @@ video {
   @include MQ(M) {
     top: 0;
     left: 0;
-    width: 100% !important;
-    height: 100% !important;
+    width: 100%;
+    height: 100%;
     transform: translateX(0%) translateY(0%);
   }
 
   @include MQ(L) {
     height: auto !important;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
   }
 }
 
@@ -241,5 +298,9 @@ video {
 .carousel-cell.is-selected {
   opacity: 1;
   z-index: 0
+}
+
+.flickity-viewport {
+  height: 100% !important;
 }
 

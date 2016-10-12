@@ -6,23 +6,28 @@ $(document).ready( function() {
   $carousel.flickity({
     contain: true,
     wrapAround: true,
-    autoPlay: 6000,
+    autoPlay: false,
     accessibility: true,
     pauseAutoPlayOnHover: false,
     prevNextButtons: false,
     pageDots: false,
-    initialIndex: Math.floor( Math.random() * $numberofSlides)
+    // initialIndex: Math.floor( Math.random() * $numberofSlides)
   });
 
   $("#slideshow > div:gt(0)").hide();
-  setInterval(function() {
-    $('#slideshow > div:first')
-      .fadeOut(1000)
-      .next()
-      .fadeIn(1000)
-      .end()
-      .appendTo('#slideshow');
-  },  6000);
+  // setInterval(function() {
+  //   $('#slideshow > div:first')
+  //     .fadeOut(1000)
+  //     .next()
+  //     .fadeIn(1000)
+  //     .end()
+  //     .appendTo('#slideshow');
+  // },  6000);
+
+  var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+  if (isMobile.matches) {
+      $('video').stop().remove();
+  }
 
   function onLoadeddata( event ) {
     var cell = $carousel.flickity( 'getParentCell', event.target );
@@ -38,8 +43,8 @@ $(document).ready( function() {
     
   // });
 
-  var $video  = $('video'),
-    $window = $(window); 
+  // var $video  = $('video'),
+  //   $window = $(window); 
 
   // $(window).resize(function(){
       
@@ -51,13 +56,13 @@ $(document).ready( function() {
   //     //     windowWidth = $window.width(),
   //     // marginLeftAdjust =   (windowWidth - videoWidth);
 
-      var videoWidth = $video.width(),
-          videoHeight = $video.height();
+      // var videoWidth = $video.width(),
+      //     videoHeight = $video.height();
 
-      $video.css({
-          'height': videoHeight, 
-          // 'width' : videoWidth
-      });
+      // $video.css({
+      //     'height': videoHeight, 
+      //     // 'width' : videoWidth
+      // });
       
   //     // $video.css({
   //     //     'height': height, 

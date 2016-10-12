@@ -311,6 +311,7 @@ nav #modal-check.active ~ .modal-content, nav #modal-check:checked ~ .modal-cont
 @media only screen and (min-width: 320px) {
   /* line 162, ../sass/modal.scss */
   nav #modal-check.active ~ .modal-content, nav #modal-check:checked ~ .modal-content, nav #modal-submit.active ~ .modal-content, nav #modal-submit:checked ~ .modal-content {
+    overflow: auto;
     left: 0;
     padding: 20% 15%;
     height: 100%;
@@ -356,19 +357,93 @@ body, html {
 }
 
 /* line 41, ../sass/screen.scss */
+.mobile_only {
+  background-repeat: repeat-y;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  display: none;
+  display: none;
+}
+@media only screen and (min-width: 320px) {
+  /* line 41, ../sass/screen.scss */
+  .mobile_only {
+    display: block;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 41, ../sass/screen.scss */
+  .mobile_only {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /* line 41, ../sass/screen.scss */
+  .mobile_only {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  /* line 61, ../sass/screen.scss */
+  .woman_00, .woman_01, .woman_02, .woman_03, .man_00 {
+    display: block;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 61, ../sass/screen.scss */
+  .woman_00, .woman_01, .woman_02, .woman_03, .man_00 {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /* line 61, ../sass/screen.scss */
+  .woman_00, .woman_01, .woman_02, .woman_03, .man_00 {
+    display: none;
+  }
+}
+
+/* line 73, ../sass/screen.scss */
+.woman_00 {
+  background-image: url(../images/woman_00.gif);
+}
+
+/* line 77, ../sass/screen.scss */
+.woman_01 {
+  background-image: url(../images/woman_01.gif);
+}
+
+/* line 80, ../sass/screen.scss */
+.woman_02 {
+  background-image: url(../images/woman_02.gif);
+}
+
+/* line 83, ../sass/screen.scss */
+.woman_03 {
+  background-image: url(../images/woman_03.gif);
+}
+
+/* line 86, ../sass/screen.scss */
+.man_00 {
+  background-image: url(../images/man_00.gif);
+}
+
+/* line 90, ../sass/screen.scss */
 .overlay {
   opacity: .5;
   background: linear-gradient(to bottom, #f37970 0%, #efa584 50%, rgba(243, 121, 112, 0.5) 100%);
 }
 
-/* line 47, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 span.small {
   font-weight: 400;
   font-size: 10px;
   font-size: 1vw;
   margin-left: 20%;
 }
-/* line 52, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 span.small a {
   color: white;
   cursor: pointer;
@@ -376,7 +451,7 @@ span.small a {
   top: -2px;
 }
 @media only screen and (min-width: 320px) {
-  /* line 47, ../sass/screen.scss */
+  /* line 96, ../sass/screen.scss */
   span.small {
     margin-left: 0;
     font-size: 10px;
@@ -386,32 +461,32 @@ span.small a {
   }
 }
 
-/* line 67, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 span.bold {
   font-weight: 700;
 }
 @media only screen and (min-width: 320px) {
-  /* line 67, ../sass/screen.scss */
+  /* line 116, ../sass/screen.scss */
   span.bold {
     font-size: 40px;
     font-size: 8vw;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 67, ../sass/screen.scss */
+  /* line 116, ../sass/screen.scss */
   span.bold {
     font-size: 20px;
     font-size: 6vw;
   }
 }
 
-/* line 85, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 .carousel {
   height: 100%;
   overflow: hidden;
 }
 
-/* line 90, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 .carousel-cell {
   width: 100%;
   height: 100%;
@@ -420,32 +495,32 @@ span.bold {
   border-radius: 5px;
 }
 
-/* line 99, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 .black {
   background-color: black;
 }
 
-/* line 103, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 .green {
   background-color: green;
 }
 
-/* line 107, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 .blue {
   background-color: blue;
 }
 
-/* line 111, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 .red {
   background-color: red;
 }
 
-/* line 115, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 .yellow {
   background-color: yellow;
 }
 
-/* line 119, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 #slideshow {
   background: transparent;
   width: 80%;
@@ -456,14 +531,14 @@ span.bold {
   position: absolute;
 }
 @media only screen and (min-width: 320px) {
-  /* line 119, ../sass/screen.scss */
+  /* line 168, ../sass/screen.scss */
   #slideshow {
     width: 100%;
     left: 0;
   }
 }
 
-/* line 133, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 #slideshow > div {
   position: fixed;
   top: 50%;
@@ -472,37 +547,37 @@ span.bold {
   text-align: center;
   transform: translate(-50%, -50%);
 }
-/* line 140, ../sass/screen.scss */
+/* line 189, ../sass/screen.scss */
 #slideshow > div h2 {
   position: absolute;
   font-weight: 300;
 }
-/* line 144, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 #slideshow > div p {
   margin: 0 auto;
   font-weight: 300;
 }
 @media only screen and (min-width: 320px) {
-  /* line 133, ../sass/screen.scss */
+  /* line 182, ../sass/screen.scss */
   #slideshow > div {
     width: auto;
   }
-  /* line 151, ../sass/screen.scss */
+  /* line 200, ../sass/screen.scss */
   #slideshow > div img {
     width: 700px;
   }
-  /* line 154, ../sass/screen.scss */
+  /* line 203, ../sass/screen.scss */
   #slideshow > div h2 {
     padding: 0;
     font-size: 4vw;
     position: relative;
   }
-  /* line 159, ../sass/screen.scss */
+  /* line 208, ../sass/screen.scss */
   #slideshow > div .facts {
     width: 320px;
     padding: 2%;
   }
-  /* line 163, ../sass/screen.scss */
+  /* line 212, ../sass/screen.scss */
   #slideshow > div p {
     width: 100%;
     font-size: 50px;
@@ -510,76 +585,84 @@ span.bold {
     line-height: 1.3em;
   }
 }
+@media only screen and (min-width: 568px) and (orientation: landscape) {
+  /* line 221, ../sass/screen.scss */
+  #slideshow > div p {
+    font-size: 4vw;
+  }
+}
 @media only screen and (min-width: 768px) {
-  /* line 133, ../sass/screen.scss */
+  /* line 182, ../sass/screen.scss */
   #slideshow > div {
     width: 100%;
   }
-  /* line 173, ../sass/screen.scss */
+  /* line 228, ../sass/screen.scss */
   #slideshow > div img {
     margin-top: 0;
     width: 100%;
   }
-  /* line 177, ../sass/screen.scss */
+  /* line 232, ../sass/screen.scss */
   #slideshow > div .facts {
     width: 100%;
   }
-  /* line 180, ../sass/screen.scss */
+  /* line 235, ../sass/screen.scss */
   #slideshow > div p {
     width: 70%;
     font-size: 5vw;
   }
 }
 @media only screen and (min-width: 1200px) {
-  /* line 186, ../sass/screen.scss */
+  /* line 241, ../sass/screen.scss */
   #slideshow > div img {
     position: relative;
     width: 70%;
   }
-  /* line 190, ../sass/screen.scss */
+  /* line 245, ../sass/screen.scss */
   #slideshow > div h2 {
     padding: 0;
     font-size: 1.5vw;
   }
 }
 
-/* line 197, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 video {
   position: fixed;
-  top: 50%;
-  left: 50%;
   min-width: 100%;
   min-height: 100%;
   overflow: hidden;
   z-index: -100;
-  transform: translateX(-50%) translateY(-50%);
   background-image: url("http://mary.wtf/images/background.png") no-repeat;
   background-size: cover;
 }
 @media only screen and (min-width: 768px) {
-  /* line 197, ../sass/screen.scss */
+  /* line 252, ../sass/screen.scss */
   video {
     top: 0;
     left: 0;
-    width: 100% !important;
-    height: 100% !important;
+    width: 100%;
+    height: 100%;
     transform: translateX(0%) translateY(0%);
   }
 }
 @media only screen and (min-width: 1200px) {
-  /* line 197, ../sass/screen.scss */
+  /* line 252, ../sass/screen.scss */
   video {
     height: auto !important;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
   }
 }
 
 /* Fade CSS */
-/* line 230, ../sass/screen.scss */
+/* line 287, ../sass/screen.scss */
 .flickity-slider {
   transform: none !important;
 }
 
-/* line 234, ../sass/screen.scss */
+/* line 291, ../sass/screen.scss */
 .carousel-cell {
   left: 0 !important;
   opacity: 0;
@@ -587,8 +670,13 @@ video {
   z-index: -1;
 }
 
-/* line 241, ../sass/screen.scss */
+/* line 298, ../sass/screen.scss */
 .carousel-cell.is-selected {
   opacity: 1;
   z-index: 0;
+}
+
+/* line 303, ../sass/screen.scss */
+.flickity-viewport {
+  height: 100% !important;
 }
