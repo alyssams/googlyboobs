@@ -38,35 +38,4 @@ $(document).ready( function() {
     video.play();
     $(video).on( 'loadeddata', onLoadeddata );
   });
-
-  // $('.modal-btn').click(function(){
-    
-  // });
-
-  // var $video  = $('video'),
-  //   $window = $(window); 
-
-  // $(window).resize(function(){
-      
-  //     var height = $window.height();
-  //     var width = $window.width();
-  //     // $video.css('height', height);
-      
-  //     // var videoWidth = $video.width(),
-  //     //     windowWidth = $window.width(),
-  //     // marginLeftAdjust =   (windowWidth - videoWidth);
-
-      // var videoWidth = $video.width(),
-      //     videoHeight = $video.height();
-
-      // $video.css({
-      //     'height': videoHeight, 
-      //     // 'width' : videoWidth
-      // });
-      
-  //     // $video.css({
-  //     //     'height': height, 
-  //     //     'width' : width
-  //     // });
-  // }).resize();
 });
