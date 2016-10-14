@@ -11,18 +11,18 @@ $(document).ready( function() {
     pauseAutoPlayOnHover: false,
     prevNextButtons: false,
     pageDots: false,
-    // initialIndex: Math.floor( Math.random() * $numberofSlides)
+    initialIndex: Math.floor( Math.random() * $numberofSlides)
   });
 
   $("#slideshow > div:gt(0)").hide();
-  setInterval(function() {
-    $('#slideshow > div:first')
-      .fadeOut(1000)
-      .next()
-      .fadeIn(1000)
-      .end()
-      .appendTo('#slideshow');
-  },  6000);
+  // setInterval(function() {
+  //   $('#slideshow > div:first')
+  //     .fadeOut(1000)
+  //     .next()
+  //     .fadeIn(1000)
+  //     .end()
+  //     .appendTo('#slideshow');
+  // },  6000);
 
   var isMobile = window.matchMedia("only screen and (max-width: 760px)");
   if (isMobile.matches) {

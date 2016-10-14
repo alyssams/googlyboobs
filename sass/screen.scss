@@ -38,6 +38,10 @@ body, html {
   margin: 0;
 }
 
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: default;
+}
+
 .mobile_only {
   background-repeat: repeat-y;
   background-size: contain;
@@ -87,17 +91,8 @@ body, html {
     background-image: url(../images/man_00.gif);
 }
 
- .overlay {
-  opacity: .5;
-  background:linear-gradient(top, rgba(243,121,112,1) 0%,rgba(239,165,132,1) 50%,rgba(243,121,112,0.5) 100%);
-  
-}
 
 span.small{
-  font-weight: 400;
-  font-size: 10px;
-  font-size: 1vw;
-  margin-left: 20%;
   a {
     color: white;
     cursor: pointer;
@@ -109,7 +104,13 @@ span.small{
     font-size: 10px;
     font-size: 2vw;
     top: 50px;
-    position: relative;
+    // position: relative;
+  }
+
+  @include MQ(M) {
+    font-weight: 400;
+    font-size: 10px;
+    font-size: 1vw;
   }
 }
 
@@ -179,6 +180,11 @@ span.bold {
     }
 }
 
+.overlay {
+  background: rgba(242, 124, 114, 0.49);
+  height: 100vh;
+}
+
 #slideshow > div {
     position: fixed;
     top: 50%;
@@ -195,14 +201,38 @@ span.bold {
       font-weight: 300;
     }
 
+    .facts {
+      background: rgba(242, 124, 114, 0.49);
+    }
+
+    // img + .facts {
+    //   position: absolute;
+    //   bottom: 5%;
+    //   h2 {
+    //     position: initial;
+    //     top: 0;
+    //     padding: 0;
+    //     font-size: 2.5vw;
+    //     padding: 4%;
+
+    //   }
+    // }
+
     @include MQ(S) {
+
+      // img + .facts {
+      //   position: absolute;
+      //   bottom: 5%;
+      //   width: 100%;
+      //   text-align: center;
+      // }
       width: auto;
       img {
         width: 700px;
       }
       h2 {
         padding: 0;
-        font-size: 4vw;
+        font-size: 3.7vw;
         position: relative;
       }
       .facts {
@@ -219,7 +249,7 @@ span.bold {
 
     @include MQ(SL) {
       img {
-        margin-top: 80px;
+        margin-top: -22px;
       }
       h2 {
         font-size: 2vw;
@@ -233,7 +263,7 @@ span.bold {
     @include MQ(M) {
       width: 100%;
       img {
-        margin-top: 0;
+        // margin-top: 0;
         width: 100%;
       }
       .facts {
@@ -247,7 +277,7 @@ span.bold {
     @include MQ(L) {
       img {
         position: relative;
-        width: 70%;
+        width: 100%;
       }
       h2 {
         padding:0;
@@ -311,3 +341,8 @@ video {
   height: 100% !important;
 }
 
+.addthis_inline_share_toolbox {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}

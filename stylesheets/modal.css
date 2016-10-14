@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'MQ'.
-        on line 12 of /Users/alyssasaucedo/projects/googlyboobs/sass/modal.scss, in `MQ'
-        from line 12 of /Users/alyssasaucedo/projects/googlyboobs/sass/modal.scss
+        on line 10 of /Users/alyssasaucedo/projects/googlyboobs/sass/modal.scss, in `MQ'
+        from line 10 of /Users/alyssasaucedo/projects/googlyboobs/sass/modal.scss
 
-7:   margin: 30px auto;
-8:   top: 0;
-9:   position: absolute;
-10:   z-index: 10;
-11:   right: 30px;
-12:   @include MQ(S){
-13:     margin: 20px auto;
-14:     top: 0;
-15:     right: 10px;
-16:   }
-17:   .modal-container {
+5:   margin: 30px auto;
+6:   top: 0;
+7:   position: absolute;
+8:   z-index: 10;
+9:   right: 30px;
+10:   @include MQ(S){
+11:     margin: 20px auto;
+12:     top: 0;
+13:     right: 10px;
+14:   }
+15:   .modal-container {
 
 Backtrace:
-/Users/alyssasaucedo/projects/googlyboobs/sass/modal.scss:12:in `MQ'
-/Users/alyssasaucedo/projects/googlyboobs/sass/modal.scss:12
+/Users/alyssasaucedo/projects/googlyboobs/sass/modal.scss:10:in `MQ'
+/Users/alyssasaucedo/projects/googlyboobs/sass/modal.scss:10
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:98:in `block in with_mixin'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
@@ -74,4 +74,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'MQ'.\A         on line 12 of /Users/alyssasaucedo/projects/googlyboobs/sass/modal.scss, in `MQ'\A         from line 12 of /Users/alyssasaucedo/projects/googlyboobs/sass/modal.scss\A \A 7:   margin: 30px auto;\A 8:   top: 0;\A 9:   position: absolute;\A 10:   z-index: 10;\A 11:   right: 30px;\A 12:   @include MQ(S){\A 13:     margin: 20px auto;\A 14:     top: 0;\A 15:     right: 10px;\A 16:   }\A 17:   .modal-container {"; }
+  content: "Error: Undefined mixin 'MQ'.\A         on line 10 of /Users/alyssasaucedo/projects/googlyboobs/sass/modal.scss, in `MQ'\A         from line 10 of /Users/alyssasaucedo/projects/googlyboobs/sass/modal.scss\A \A 5:   margin: 30px auto;\A 6:   top: 0;\A 7:   position: absolute;\A 8:   z-index: 10;\A 9:   right: 30px;\A 10:   @include MQ(S){\A 11:     margin: 20px auto;\A 12:     top: 0;\A 13:     right: 10px;\A 14:   }\A 15:   .modal-container {"; }
