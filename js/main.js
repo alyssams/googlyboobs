@@ -22,7 +22,7 @@ $(document).ready( function() {
       .fadeIn(1000)
       .end()
       .appendTo('#slideshow');
-  },  4000);
+  },  6000);
 
   var isMobile = window.matchMedia("only screen and (max-width: 760px)");
   if (isMobile.matches) {
